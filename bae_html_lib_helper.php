@@ -12,7 +12,18 @@ class BAEHTMLLib{
         $html = str_replace("<table ","<table class='tablesorter' id='sort_table' onclick='jQuery(\"#sort_table\").tablesorter();' ",$html);
 	return $html;
     }
-
+    public function tbodyOpen(){
+	return "<tbody>";
+    }
+    public function tbodyClose(){
+	return "</tbody>";
+    }
+    public function theadOpen(){
+	return "<thead>";
+    }
+    public function theadClose(){
+	return "</thead>";
+    }
     public function textarea($text,$attrib){
         return "<textarea ".$attrib.">".$text."</textarea>\n";
     }
