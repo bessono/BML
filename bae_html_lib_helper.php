@@ -8,7 +8,7 @@
  */
 class BAEHTMLLib{   
     
-    public function make_table_sort($html){
+    public function makeTableSort($html){
         $html = str_replace("<table ","<table class='tablesorter' id='sort_table' onclick='jQuery(\"#sort_table\").tablesorter();' ",$html);
 	return $html;
     }
